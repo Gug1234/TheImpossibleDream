@@ -19,7 +19,7 @@
 	nothing quite as potent as these fearsome greatflails. The spikes have a nasty habit of gumming up with gore; this is intentional."
 	icon = 'modular_tidi/drow_mercs/icons/drowblunt64.dmi'
 	icon_state = "drowgreatflail"
-	possible_item_intents = list(/datum/intent/flail/strike, /datum/intent/dagger/sucker_punch)//always be punching
+	possible_item_intents = list(/datum/intent/flail/strike)
 	gripped_intents = list(/datum/intent/flail/strikerange, /datum/intent/flail/smash/ranged, /datum/intent/mace/smash/flailchop, /datum/intent/flail/sweep)
 	associated_skill = /datum/skill/combat/whipsflails
 	resistance_flags = FIRE_PROOF// weapon of war, not a thresher
@@ -35,7 +35,7 @@
 	desc = "A pendulous orb of dark mithril hung from a thorned link of chains. For more robustly built drow caviliers, there is \
 	nothing quite as potent as these fearsome greatflails."
 	icon_state = "drowgreatflailb"
-	possible_item_intents = list(/datum/intent/flail/strike/matthiosflail, /datum/intent/dagger/sucker_punch)//we use the better intents here since it's fully focused on blunt damage
+	possible_item_intents = list(/datum/intent/flail/strike/matthiosflail)//we use the better intents here since it's fully focused on blunt damage
 	gripped_intents = list(/datum/intent/flail/strike/matthiosflail, /datum/intent/flail/smash/matthiosflail, /datum/intent/flail/sweep)
 	minstr = 13// no jaluck twinks allowed!
 	wdefense = 4// not as scary looking so worse defense idk
@@ -60,8 +60,8 @@
 	icon_state = "drowbardiche"
 	force = 25
 	force_wielded = 28//-2 force
-	possible_item_intents = list(SPEAR_THRUST, /datum/intent/spear/cut/glaive, /datum/intent/axe/chop/scythe, /datum/intent/dagger/sucker_punch)
-	gripped_intents = list(/datum/intent/spear/thrust/drow_glaive, /datum/intent/spear/cut/glaive/sweep, /datum/intent/spear/cut/bardiche/cleave/chop, /datum/intent/dagger/sucker_punch)
+	possible_item_intents = list(SPEAR_THRUST, /datum/intent/spear/cut/glaive, /datum/intent/axe/chop/scythe)
+	gripped_intents = list(/datum/intent/spear/thrust/drow_glaive, /datum/intent/spear/cut/glaive/sweep, /datum/intent/spear/cut/bardiche/cleave/chop)
 	wdefense = 4//-2 def given how good it's intents are
 	max_blade_int = 160//-40 blade integ
 	smeltresult = /obj/item/ingot/steel
@@ -257,8 +257,9 @@
 	attack_verb = list("lashes", "slices")
 	hitsound = list('sound/combat/hits/bladed/genslash (1).ogg', 'sound/combat/hits/bladed/genslash (2).ogg', 'sound/combat/hits/bladed/genslash (3).ogg')
 	chargetime = 0.5 SECONDS
-	penfactor = PEN_LIGHT
+	penfactor = PEN_NONE
 	item_d_type = "slash"
+	no_early_release = TRUE
 
 /datum/intent/whip/crack/drow_urumi
 	name = "urumi crack"
@@ -268,6 +269,7 @@
 	chargetime = 0.9 SECONDS
 	penfactor = PEN_LIGHT
 	item_d_type = "slash"
+	no_early_release = TRUE
 
 /datum/intent/whip/thrust/drow_urumi
 	name = "urumi thrust"
@@ -284,6 +286,7 @@
 	item_d_type = "stab"
 	effective_range = 3
 	effective_range_type = EFF_RANGE_EXACT
+	no_early_release = TRUE
 
 /obj/item/rogueweapon/sword/sabre/stalker
 	icon = 'modular_tidi/drow_mercs/icons/drowswords32.dmi'
