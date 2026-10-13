@@ -327,7 +327,7 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 		user.put_in_hands(C)
 		update_icon()
 		return
-	// [SURREALIS-EDIT] - JOB_WEAPON_OVERRIDES
+	// [SURREALIS-EDIT] - DROW_MERCS
 	// else if(bbarding) // SURREALIS-EDIT - ORIGINAL
 	else if(bbarding && !bbarding.natural_armor)
 	// [/SURREALIS-EDIT]
@@ -389,7 +389,7 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 				detail_above_overlay.appearance_flags = RESET_ALPHA|RESET_COLOR
 				add_overlay(detail_above_overlay)
 
-		// [SURREALIS-EDIT] - JOB_WEAPON_OVERRIDES
+		// [SURREALIS-EDIT] - DROW_MERCS
 		// if(bbarding) // SURREALIS-EDIT - ORIGINAL
 		if(bbarding && !bbarding.natural_armor)
 		// [/SURREALIS-EDIT]

@@ -1,6 +1,6 @@
 /obj/effect/spawner/lootdrop/drow_equipment_spawner
 	name = "drow equipment spawner"
-	icon = 'modular_tidi/job_weapon_overrides/icons/spawnerhelpers.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/spawnerhelpers.dmi'
 	icon_state = "drowweapon/armor"
 	lootcount = 1
 	loot = list(

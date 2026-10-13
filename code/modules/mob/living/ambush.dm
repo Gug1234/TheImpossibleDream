@@ -225,11 +225,7 @@ GLOBAL_LIST_INIT(melee_combat_skills, list( \
 		if(istype(spawnedmob, /mob/living/simple_animal/hostile))
 			var/mob/living/simple_animal/hostile/M = spawnedmob
 			M.attack_same = FALSE
-			// [SURREALIS-EDIT] - JOB_WEAPON_OVERRIDES
-			// M.del_on_deaggro = 44 SECONDS // SURREALIS-EDIT - ORIGINAL
-			if(!istype(M, /mob/living/simple_animal/hostile/retaliate/rogue/drider))
-				M.del_on_deaggro = 44 SECONDS
-			// [/SURREALIS-EDIT]
+			M.del_on_deaggro = 44 SECONDS
 			M.faction += "ambush"
 			M.GiveTarget(aggro_target)
 		if(istype(spawnedmob, /mob/living/carbon/human))

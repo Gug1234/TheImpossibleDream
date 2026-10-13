@@ -7,14 +7,14 @@
 	this trait makes them surprisingly pragmatic and straightforward mercenaries, as a drow can be counted on to do any job so long as the \
 	price is right and it serves whatever higher ambition they might have."
 	outfit = /datum/outfit/job/roguetown/mercenary/crocs
-	cmode_music = 'modular_tidi/job_weapon_overrides/sounds/combat_delf.ogg'
+	cmode_music = 'modular_tidi/drow_mercs/sounds/combat_delf.ogg'
 	extra_context = "Choose from the drow arsenal, then choose a summonable drider or an Athletics bonus. Female drow gain Nutcracker and Bedbreaker; males lose one Strength and Fortune and gain one Speed and Willpower."
 
 /datum/advclass/mercenary/anthrax_assassin
 	name = "Crocs de l'araignée Assassin"
 	tutorial = "The Crocs de l'araignée, translated literally to mean \"Spider's Teeth\", is a renowned collective of blades, whips, and riders for hire often employed in the vast drow undercity complexes and occasionally the surface above. Infamous for their battlefrenzy, sadism, and mastery over arachnid cavalry, a member of the Spider's Teeth stands among some of the fiercest if cruelest warriors in Psydonia. Dark elves ultimately are only truly aligned to themselves and their own interests; this trait makes them surprisingly pragmatic and straightforward mercenaries, as a drow can be counted on to do any job so long as the price is right and it serves whatever higher ambition they might have."
 	outfit = /datum/outfit/job/roguetown/mercenary/crocsass
-	cmode_music = 'modular_tidi/job_weapon_overrides/sounds/combat_delf.ogg'
+	cmode_music = 'modular_tidi/drow_mercs/sounds/combat_delf.ogg'
 	extra_context = "Choose a bow, crossbow, or paired drow weapons, then a summonable drider or an Athletics bonus. Female drow gain Nutcracker and Bedbreaker; males lose one Strength and Fortune and gain one Speed and Willpower."
 	subclass_stats = list(
 		STATKEY_WIL = 2,

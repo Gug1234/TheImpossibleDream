@@ -1,6 +1,6 @@
 /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat/shadowvest
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowarmor.dmi'
-	mob_overlay_icon = 'modular_tidi/job_weapon_overrides/icons/onmob_drowarmor.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowarmor.dmi'
+	mob_overlay_icon = 'modular_tidi/drow_mercs/icons/onmob_drowarmor.dmi'
 	name = "drowcraft vest"
 	desc = "Traditional Drow armour made from the hide of one of the Underdark's many beasts, underlayered with the chitin plates of a drider. Durable yet still flexible, perfect for skirmishers."
 	icon_state = "shadowvest"
@@ -10,21 +10,21 @@
 	allowed_race = NON_DWARVEN_RACE_TYPES
 
 /obj/item/clothing/suit/roguetown/armor/plate/fluted/shadowplate
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowarmor.dmi'
-	mob_overlay_icon = 'modular_tidi/job_weapon_overrides/icons/onmob_drowarmor.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowarmor.dmi'
+	mob_overlay_icon = 'modular_tidi/drow_mercs/icons/onmob_drowarmor.dmi'
 	body_parts_covered = COVERAGE_FULL
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/shadowrobe
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowarmor.dmi'
-	mob_overlay_icon = 'modular_tidi/job_weapon_overrides/icons/onmob_drowarmor.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowarmor.dmi'
+	mob_overlay_icon = 'modular_tidi/drow_mercs/icons/onmob_drowarmor.dmi'
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/shadowrobe
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowarmor.dmi'
-	mob_overlay_icon = 'modular_tidi/job_weapon_overrides/icons/onmob_drowarmor.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowarmor.dmi'
+	mob_overlay_icon = 'modular_tidi/drow_mercs/icons/onmob_drowarmor.dmi'
 
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/shadowplate
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowhead.dmi'
-	mob_overlay_icon = 'modular_tidi/job_weapon_overrides/icons/onmob_drowhead.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowhead.dmi'
+	mob_overlay_icon = 'modular_tidi/drow_mercs/icons/onmob_drowhead.dmi'
 	name = "drow cavalier helm"
 	desc = "A greathelm commonly worn by Underdark spider-jockies. The golden wings convey both a feminine elegance and martriarchal tyranny.\
 	While lacking an adjustable visor, the winged halo and accompanying plumage can detach from the helm and be worn seperately."
@@ -95,8 +95,8 @@
 		add_overlay(pic)
 
 /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/shadowplate
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowhead.dmi'
-	mob_overlay_icon = 'modular_tidi/job_weapon_overrides/icons/onmob_drowhead.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowhead.dmi'
+	mob_overlay_icon = 'modular_tidi/drow_mercs/icons/onmob_drowhead.dmi'
 	name = "smiling bascinet"
 	desc = "A helmet of drowsmith sporting a gold wreath and a grinning visor."
 	icon_state = "drowhelm"

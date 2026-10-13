@@ -14,7 +14,7 @@
 	outfit = /datum/outfit/job/roguetown/adventurer/drow
 	class_select_category = CLASS_CAT_RACIAL
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT, CTAG_LICKER_WRETCH)
-	cmode_music = 'modular_tidi/job_weapon_overrides/sounds/combat_delf.ogg'
+	cmode_music = 'modular_tidi/drow_mercs/sounds/combat_delf.ogg'
 	traits_applied = list(TRAIT_DARKVISION, TRAIT_ANTHRAXI)
 	subclass_languages = list(/datum/language/otavan)
 	subclass_stats = list(

@@ -1,13 +1,13 @@
 /mob/living/attempt_disarm(mob/living/user, obj/item/weapon)
 	if(istype(user.used_intent, /datum/intent/sword/disarm))
 		var/datum/intent/sword/disarm/disarm_intent = user.used_intent
-		return disarm_intent.attempt_drow_disarm(src, user, weapon)
+		return disarm_intent.attempt_weapon_disarm(src, user, weapon)
 	return ..()
 
 /datum/intent/sword/disarm
 	desc = "Hook the targeted hand to take or knock away its weapon. Two-handed grips and paired weapons improve the odds; exposed, baited, or off-balanced targets are especially vulnerable."
 
-/datum/intent/sword/disarm/proc/attempt_drow_disarm(mob/living/H, mob/living/user, obj/item/weapon)
+/datum/intent/sword/disarm/proc/attempt_weapon_disarm(mob/living/H, mob/living/user, obj/item/weapon)
 	if(!iscarbon(H) || H == user)
 		return
 	if(QDELETED(weapon))

@@ -17,7 +17,7 @@
 	name = "spined drow greatflail"
 	desc = "A pendulous, bladed, and spined orb of dark mithril hung from a thorned link of chains. For more robustly built drow caviliers, there is \
 	nothing quite as potent as these fearsome greatflails. The spikes have a nasty habit of gumming up with gore; this is intentional."
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowblunt64.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowblunt64.dmi'
 	icon_state = "drowgreatflail"
 	possible_item_intents = list(/datum/intent/flail/strike, /datum/intent/dagger/sucker_punch)//always be punching
 	gripped_intents = list(/datum/intent/flail/strikerange, /datum/intent/flail/smash/ranged, /datum/intent/mace/smash/flailchop, /datum/intent/flail/sweep)
@@ -56,7 +56,7 @@
 	desc = "While similar to the iron bardiche wielded by petty drow raiders, this elegant polearm cut a far more striking image. \
 	Finely forged and superbly balanced, the bardiche of a drow cavalier can cleave through enemy chaff both one-handed on spiderback \
 	& two-handed on foot."
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowpolearms64.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowpolearms64.dmi'
 	icon_state = "drowbardiche"
 	force = 25
 	force_wielded = 28//-2 force
@@ -93,7 +93,7 @@
 	desc = "For underdark outsiders, drow smithing can seem a competition for who can put the most spikes and hooks on a weapon; \
 	this aruval is the logical end of that philosophy. This curved blade sports a backcurved tip, a hooked claw on the back edge, \
 	and a piercing spike near its gilded crossguard."
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowswords64.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowswords64.dmi'
 	icon_state = "drowaruval"
 	sheathe_icon = "drowaruval"
 	force = 25
@@ -111,7 +111,7 @@
 	desc = "A darkly shimmering shotel of drowsmith. While reminescent of the more commonly used drow falx, \
 	the shotels superior reach and light weight make it a favorite of Crocs de l'araignée Cavaliers who seek \
 	the reach of a polearm with the speed of a sword."
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowswords64.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowswords64.dmi'
 	icon_state = "drowshotel"
 	sheathe_icon = "drowshotel"
 	alt_grips = null
@@ -124,7 +124,7 @@
 	special = /datum/special_intent/shin_swipe
 
 /obj/item/rogueweapon/sword/sabre/hook/stalker
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowswords64.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowswords64.dmi'
 	pixel_x = -16
 	pixel_y = -16
 	inhand_x_dimension = 64
@@ -142,7 +142,7 @@
 	bigboy = TRUE
 
 /obj/item/rogueweapon/sword/falx/stalker
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowswords32.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowswords32.dmi'
 	name = "stalker falx"
 	desc = "A jagged blade with an inward edge. A popular choice for drow warriors, the falx is adept at slicing through the armor of men and the flesh of lessers."
 	icon_state = "spiderfalx"
@@ -156,7 +156,7 @@
 	name = "drow greatsabre"
 	desc = "A large, curved blade sporting a single cutting edge and a blunted spine affixed with a piercing spike. \
 	While not near as elaborate as other drow blades, the simple strength of the greatsabre makes it adept at cleaving through armor, chitin, and bone alike."
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowswords64.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowswords64.dmi'
 	icon_state = "drowsword"
 	sheathe_icon = "drowgreatsabre"
 	force = 25
@@ -172,7 +172,7 @@
 	desc = "A wickedly sharp two-handed sword of drow smith. While you'd never get one to admit it, this blade was \
 	undoubtedly inspired by the grenzelhoftian kriegmesser. The drow version features more gilding than its surface-dwelling cousin, \
 	alongside brutal serration found on many drow blades."
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowswords64.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowswords64.dmi'
 	icon_state = "drowmesser"
 	sheathe_icon = "drowmesser"
 	possible_item_intents = list(/datum/intent/sword/cut/krieg, /datum/intent/sword/chop/falx, /datum/intent/rend/krieg, /datum/intent/dagger/sucker_punch)
@@ -187,7 +187,7 @@
 	desc = "A long, darkly shimmering blade of drowsmith. While looking familiar to the standard longsword, \
 	the use case is far less versatile. Swords of this kind feature rigidly straight blades, uncharacteristic of drowsmith, and are primarily used as a hunting tool. \
 	Regardless of its intended use, a weapon that can puncture the chitin of underdwelling arachnids can just as easily pierce a man's armor."
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowswords64.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowswords64.dmi'
 	icon_state = "drowlongsword"
 	sheathe_icon = "drowlongsword"
 	force = 25
@@ -199,7 +199,7 @@
 	special = /datum/special_intent/piercing_lunge
 
 /obj/item/rogueweapon/whip/urumi/spider
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowwhips32.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowwhips32.dmi'
 	name = "drow urumi"
 	desc = "Two darkly shimmering and flexible blades coiling outwards from a gilded hilt wrapped with a small piece of spider-silk. \
 	The knuckleguarded handle betrays the weapon's grim purpose: to bring the enemies of the drow to their knees, be it through blade or bludgeon."
@@ -219,7 +219,7 @@
 	name = "gilded drow crossbow"
 	desc = "A stripped-down crossbow specifically made for the small engagement ranges of the Underdark and caverns. A practical tool of the Drow assassin - \
 	a lady's friend is a man's end. The machining is finely tuned, and the whole of the bow is ornamented in gold - a symbol of rank among drow markswomen."
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowmisc32.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowmisc32.dmi'
 	icon_state = "drowcrossbowgilded0"
 	item_state = "drowcrossbowgilded"
 	possible_item_intents = list(/datum/intent/shoot/crossbow/slurbow, /datum/intent/arc/crossbow/slurbow, INTENT_GENERIC)
@@ -235,7 +235,7 @@
 	name = "drow crossbow"
 	desc = "A stripped-down crossbow specifically made for the small engagement ranges of the Underdark and caverns. The body is well worn \
 	and lacks the gilding one commonly sees on the equipment of established Drow warriors."
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowmisc32.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowmisc32.dmi'
 	icon_state = "drowcrossbow0"
 	item_state = "drowcrossbow"
 	possible_item_intents = list(/datum/intent/shoot/crossbow/slurbow, /datum/intent/arc/crossbow/slurbow, INTENT_GENERIC)
@@ -286,28 +286,15 @@
 	effective_range_type = EFF_RANGE_EXACT
 
 /obj/item/rogueweapon/sword/sabre/stalker
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowswords32.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowswords32.dmi'
 	icon_state = "spidersaber"
 	sheathe_icon = "spidersaber"
 	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust/sabre, /datum/intent/rend, /datum/intent/dagger/sucker_punch)
 
 /obj/item/rogueweapon/whip/spiderwhip
-	icon = 'modular_tidi/job_weapon_overrides/icons/drowwhips32.dmi'
+	icon = 'modular_tidi/drow_mercs/icons/drowwhips32.dmi'
 
 /obj/item/rogueweapon/shield/tower/spidershield
 	force = 25
 	resistance_flags = FIRE_PROOF
 	possible_item_intents = list(SHIELD_BASH_METAL, SHIELD_BLOCK, SHIELD_SMASH_METAL)
-
-/obj/item/rogueweapon/flail/peasantwarflail/iron
-	resistance_flags = FIRE_PROOF
-
-/datum/intent/flail/strike/matthiosflail
-	damfactor = 1.3
-
-/datum/intent/flail/smash/matthiosflail
-	damfactor = 1.6
-
-/obj/item/rogueweapon/flail/peasantwarflail/matthios
-	resistance_flags = FIRE_PROOF
-	special = /datum/special_intent/greatflail_swing
