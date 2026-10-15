@@ -7,3 +7,5 @@
 #include "loadout\_loadout.dme"
 #include "job_weapon_overrides\_job_weapon_overrides.dme"
 #include "drow_mercs\_drow_mercs.dme"
+#include "nudist_approved\_nudist_approved.dme"
+#include "lord_of_vanity\_lord_of_vanity.dme"
