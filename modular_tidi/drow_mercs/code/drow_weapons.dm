@@ -13,6 +13,23 @@
 	blade_class = BCLASS_CHOP
 	item_d_type = "slash"
 
+/datum/intent/dagger/sucker_punch/drow
+	name = "unevadable punch"
+	icon_state = "inpunch"
+	desc = "Breach your target's guard with a swift-and-sudden jab. This strike deals low damage, but cannot be parried or dodged."
+	attack_verb = list("punches", "jabs", "clocks")
+	animname = "strike"
+	blade_class = BCLASS_BLUNT
+	hitsound = list('sound/combat/hits/punch/punch_hard (1).ogg', 'sound/combat/hits/punch/punch_hard (2).ogg', 'sound/combat/hits/punch/punch_hard (3).ogg')
+	damfactor = 0.8 //basically just bash, but flavored as a punch
+	penfactor = PEN_NONE
+	clickcd = 14
+	recovery = 10
+	item_d_type = "blunt"
+	intent_intdamage_factor = BLUNT_DEFAULT_INT_DAMAGEFACTOR
+	canparry = TRUE
+	candodge = TRUE
+
 /obj/item/rogueweapon/flail/peasantwarflail/stalker
 	name = "spined drow greatflail"
 	desc = "A pendulous, bladed, and spined orb of dark mithril hung from a thorned link of chains. For more robustly built drow caviliers, there is \
@@ -115,8 +132,8 @@
 	icon_state = "drowshotel"
 	sheathe_icon = "drowshotel"
 	alt_grips = null
-	possible_item_intents = list(/datum/intent/sword/cut/zwei, /datum/intent/sword/chop/long, /datum/intent/dagger/sucker_punch)
-	gripped_intents = list(/datum/intent/sword/cut/zwei, /datum/intent/sword/chop/long, /datum/intent/dagger/sucker_punch)
+	possible_item_intents = list(/datum/intent/sword/cut/zwei, /datum/intent/sword/chop/long, /datum/intent/dagger/sucker_punch/drow)
+	gripped_intents = list(/datum/intent/sword/cut/zwei, /datum/intent/sword/chop/long, /datum/intent/dagger/sucker_punch/drow)
 	force = 27
 	force_wielded = 27//doesn't get buffed to 30 like normal shotel
 	max_integrity = 175//tiny bit more integ since it's unique
@@ -136,7 +153,7 @@
 	the makeshift weapons of would-be freemen."
 	icon_state = "drowhooksword"
 	sheathe_icon = "drowhook"
-	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust/hook, /datum/intent/dagger/sucker_punch, /datum/intent/sword/disarm)
+	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust/hook, /datum/intent/dagger/sucker_punch/drow, /datum/intent/sword/disarm)
 	force = 22//+2 over normal hooksword
 	max_integrity = 175//tiny bit more integ since it's unique
 	bigboy = TRUE
@@ -148,7 +165,7 @@
 	icon_state = "spiderfalx"
 	sheathe_icon = "spidersaber"
 	wbalance = WBALANCE_SWIFT
-	possible_item_intents = list(/datum/intent/sword/cut/falx,  /datum/intent/sword/chop/falx, /datum/intent/dagger/sucker_punch, /datum/intent/rend)
+	possible_item_intents = list(/datum/intent/sword/cut/falx,  /datum/intent/sword/chop/falx, /datum/intent/dagger/sucker_punch/drow, /datum/intent/rend)
 	force = 25// same as elf sabre
 	wdefense = 5//-1, use it with a shield
 
@@ -162,8 +179,8 @@
 	force = 25
 	force_wielded = 30
 	max_integrity = 200
-	possible_item_intents = list(/datum/intent/sword/cut/sabre/slow, /datum/intent/sword/thrust/sabre, /datum/intent/rend, /datum/intent/dagger/sucker_punch)// better to use your fist than dent that pretty pommel
-	gripped_intents = list(/datum/intent/sword/cut/sabre/slow, /datum/intent/pick/bad, /datum/intent/sword/chop/sabre, /datum/intent/dagger/sucker_punch)//shitty pick using our spiked bit.
+	possible_item_intents = list(/datum/intent/sword/cut/sabre/slow, /datum/intent/sword/thrust/sabre, /datum/intent/rend, /datum/intent/dagger/sucker_punch/drow)// better to use your fist than dent that pretty pommel
+	gripped_intents = list(/datum/intent/sword/cut/sabre/slow, /datum/intent/pick/bad, /datum/intent/sword/chop/sabre, /datum/intent/dagger/sucker_punch/drow)//shitty pick using our spiked bit.
 	alt_grips = null // nope!
 	bigboy = TRUE
 
@@ -175,12 +192,11 @@
 	icon = 'modular_tidi/drow_mercs/icons/drowswords64.dmi'
 	icon_state = "drowmesser"
 	sheathe_icon = "drowmesser"
-	possible_item_intents = list(/datum/intent/sword/cut/krieg, /datum/intent/sword/chop/falx, /datum/intent/rend/krieg, /datum/intent/dagger/sucker_punch)
-	gripped_intents = list(/datum/intent/sword/cut/krieg, /datum/intent/sword/chop/militia, /datum/intent/rend/krieg, /datum/intent/dagger/sucker_punch)
+	possible_item_intents = list(/datum/intent/sword/cut/krieg, /datum/intent/sword/chop/falx, /datum/intent/rend/krieg, /datum/intent/dagger/sucker_punch/drow)
+	gripped_intents = list(/datum/intent/sword/cut/krieg, /datum/intent/sword/chop/militia, /datum/intent/rend/krieg, /datum/intent/dagger/sucker_punch/drow)
 	alt_grips = null// Can't mordhau this
 	max_integrity = 175// less integ than the real deal, not near as much as the kazen messers
 	bigboy = TRUE
-	special = /datum/special_intent/axe_swing
 
 /obj/item/rogueweapon/sword/long/stalker//what if estoc but longsword?
 	name = "drow longsword"
@@ -192,8 +208,8 @@
 	sheathe_icon = "drowlongsword"
 	force = 25
 	force_wielded = 27
-	possible_item_intents = list(/datum/intent/sword/thrust, /datum/intent/sword/cut/rapier, /datum/intent/dagger/sucker_punch)
-	gripped_intents = list(/datum/intent/sword/thrust/estoc, /datum/intent/sword/thrust/estoc/lunge, /datum/intent/sword/cut/rapier, /datum/intent/dagger/sucker_punch)
+	possible_item_intents = list(/datum/intent/sword/thrust, /datum/intent/sword/cut/rapier, /datum/intent/dagger/sucker_punch/drow)
+	gripped_intents = list(/datum/intent/sword/thrust/estoc, /datum/intent/sword/thrust/estoc/lunge, /datum/intent/sword/cut/rapier, /datum/intent/dagger/sucker_punch/drow)
 	alt_grips = null// you wouldn't dare dent that gilded crossguard with a mordhau, would you?
 	bigboy = TRUE
 	special = /datum/special_intent/piercing_lunge
@@ -208,7 +224,7 @@
 	minstr = 10
 	max_integrity = 150
 	wdefense = 0
-	possible_item_intents = list(/datum/intent/whip/lash/drow_urumi, /datum/intent/whip/crack/drow_urumi, /datum/intent/whip/thrust/drow_urumi, /datum/intent/dagger/sucker_punch)
+	possible_item_intents = list(/datum/intent/whip/lash/drow_urumi, /datum/intent/whip/crack/drow_urumi, /datum/intent/whip/thrust/drow_urumi, /datum/intent/dagger/sucker_punch/drow)
 	max_blade_int = 100
 	anvilrepair = /datum/skill/craft/weaponsmithing
 	sewrepair = FALSE
@@ -292,7 +308,7 @@
 	icon = 'modular_tidi/drow_mercs/icons/drowswords32.dmi'
 	icon_state = "spidersaber"
 	sheathe_icon = "spidersaber"
-	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust/sabre, /datum/intent/rend, /datum/intent/dagger/sucker_punch)
+	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust/sabre, /datum/intent/rend, /datum/intent/dagger/sucker_punch/drow)
 
 /obj/item/rogueweapon/whip/spiderwhip
 	icon = 'modular_tidi/drow_mercs/icons/drowwhips32.dmi'
