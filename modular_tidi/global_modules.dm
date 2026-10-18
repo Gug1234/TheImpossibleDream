@@ -2,6 +2,7 @@
 #include "combat_music\_combat_music.dme"
 #include "commandbar\_commandbar.dme"
 #include "drow_mercs\_drow_mercs.dme"
+#include "excidium\_excidium.dme"
 #include "job_weapon_overrides\_job_weapon_overrides.dme"
 #include "loadout\_loadout.dme"
 #include "lord_of_vanity\_lord_of_vanity.dme"
