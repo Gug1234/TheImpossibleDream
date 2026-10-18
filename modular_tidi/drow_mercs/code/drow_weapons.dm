@@ -14,9 +14,9 @@
 	item_d_type = "slash"
 
 /datum/intent/dagger/sucker_punch/drow
-	name = "unevadable punch"
+	name = "stern rebuttal"
 	icon_state = "inpunch"
-	desc = "Breach your target's guard with a swift-and-sudden jab. This strike deals low damage, but cannot be parried or dodged."
+	desc = "Bust your target's nose with a swift-and-sudden jab. Often called an underdark handshake."
 	attack_verb = list("punches", "jabs", "clocks")
 	animname = "strike"
 	blade_class = BCLASS_BLUNT
